@@ -1,6 +1,6 @@
 The application shall make use of a database for storing client and hardware information
 The Software shall a record reporting tool.
-Users Control and Levels.
 The application shall include a graphical user interface
 The GUI shall have the capability to add a new user to the database 
 The GUI shall have the capability to add a new hardware to the database 
+The Software shall a Users Control and Levels.
