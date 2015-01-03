@@ -1,6 +1,30 @@
-The application shall make use of a database for storing client and hardware information
-The Software shall a record reporting tool.
-The application shall include a graphical user interface
-The GUI shall have the capability to add a new user to the database 
-The GUI shall have the capability to add a new hardware to the database 
+-------------------------------------------------------------------------------
+CORE FUNCTIONALITY:
+Functional requirements
+-------------------------------------------------------------------------------
+The Software shall make use of a database for storing client, hardware and service report information
 The Software shall a Users Control and Levels.
+
+-------------------------------------------------------------------------------
+USER INTERFACE:
+Stuff about the interface with the user
+-------------------------------------------------------------------------------
+The Software shall include a graphical user interface (GUI)
+The GUI shall have the capability to add a new user to the database 
+The GUI shall have the capability to edit the information of an existing user in the database 
+The GUI shall have the capability to add a new hardware to the database 
+The GUI shall have the capability to edit the information of an existing hardware in the database
+The GUI shall be able to create new service reports
+The GUI shall be able to edit/delete existing service reports in the database
+
+-------------------------------------------------------------------------------
+SERVICE REPORT:
+A service report will be created upon the arrival of a device for diagnosis/repair
+-------------------------------------------------------------------------------
+A service report shall include client, hardware and service information
+
+-------------------------------------------------------------------------------
+MISC:
+Other requirements
+-------------------------------------------------------------------------------
+The Software shall a record reporting tool.
