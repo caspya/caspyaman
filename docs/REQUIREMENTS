@@ -10,7 +10,13 @@ The GUI shall have the capability to edit the information of an existing hardwar
 The GUI shall be able to create new service reports
 The GUI shall be able to edit/delete existing service reports in the database
 The GUI shall have include the option to send an email with information about the diagnostic of device and cost of repair (service status) to the client
-
+The GUI shall have include the option to send a print of the service report
+The GUI shall have include the option to show the progress of each device
+The GUI shall have include the option to show the pending tasks
+The GUI shall have include the option to show who is checking each device
+The GUI shall have include the option to show the devices that have not been checked
+The GUI shall have include the option to show the devices that  that are in review
+The GUI shall have include the option to show the devices that are already repaired
 -------------------------------------------------------------------------------
 HARDWARE:
 -------------------------------------------------------------------------------
