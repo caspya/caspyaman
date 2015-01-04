@@ -3,7 +3,7 @@ CORE FUNCTIONALITY:
 Functional requirements
 -------------------------------------------------------------------------------
 The Software shall make use of a database for storing client, hardware and service report information
-The Software shall a Users Control and Levels.
+The Software shall provide Users Control and Levels.
 
 -------------------------------------------------------------------------------
 USER INTERFACE:
@@ -16,16 +16,38 @@ The GUI shall have the capability to add a new hardware to the database
 The GUI shall have the capability to edit the information of an existing hardware in the database
 The GUI shall be able to create new service reports
 The GUI shall be able to edit/delete existing service reports in the database
+The GUI shall have include the option to send an email with information about the diagnostic of device and cost of repair (service status) to the client
+
+-------------------------------------------------------------------------------
+CLIENT:
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+HARDWARE:
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+SERVICE:
+It is called "service" to any client request either for device diagnosis, repair or others.
+A service will be created upon the arrival of a device to the workshop
+-------------------------------------------------------------------------------
+A service report shall include client, hardware and service information
+A service shall include a status indicator for tracking the progress of it
+The service status shall keep track of the progress with stages like: SERVICE NOT STARTED, DIAGNOSIS IN PROGRESS, DIAGNOSIS COMPLETED AND WAITING FOR CLIENT APROVAL, REPAIR NOT STARTED, REPAIR IN PROGRESS, SERVICE READY
 The GUI shall have the capability to send an email with information about the diagnostic of device and cost of repair
 
 -------------------------------------------------------------------------------
-SERVICE REPORT:
-A service report will be created upon the arrival of a device for diagnosis/repair
+REPORT:
 -------------------------------------------------------------------------------
-A service report shall include client, hardware and service information
+The Software shall provide a reporting tool.
+
+-------------------------------------------------------------------------------
+DATABASE:
+-------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------
 MISC:
 Other requirements
 -------------------------------------------------------------------------------
-The Software shall a record reporting tool.
+The Software shall be packed into a couple of installer, one for windows and the other for linux systems
+The Software installer shall install all the dependen libraries an tools required for running
