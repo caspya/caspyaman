@@ -1,11 +1,4 @@
 -------------------------------------------------------------------------------
-CORE FUNCTIONALITY:
-Functional requirements
--------------------------------------------------------------------------------
-The Software shall make use of a database for storing client, hardware and service report information
-The Software shall provide Users Control and Levels.
-
--------------------------------------------------------------------------------
 USER INTERFACE:
 Stuff about the interface with the user
 -------------------------------------------------------------------------------
@@ -19,12 +12,24 @@ The GUI shall be able to edit/delete existing service reports in the database
 The GUI shall have include the option to send an email with information about the diagnostic of device and cost of repair (service status) to the client
 
 -------------------------------------------------------------------------------
+HARDWARE:
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
 CLIENT:
 -------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------
-HARDWARE:
+DATABASE AND REPORT:
 -------------------------------------------------------------------------------
+The Software shall provide a reporting tool.
+
+-------------------------------------------------------------------------------
+CORE:
+Core functional requirements
+-------------------------------------------------------------------------------
+The Software shall make use of a database for storing client, hardware and service report information
+The Software shall provide Users Control and Levels.
 
 -------------------------------------------------------------------------------
 SERVICE:
@@ -35,15 +40,6 @@ A service report shall include client, hardware and service information
 A service shall include a status indicator for tracking the progress of it
 The service status shall keep track of the progress with stages like: SERVICE NOT STARTED, DIAGNOSIS IN PROGRESS, DIAGNOSIS COMPLETED AND WAITING FOR CLIENT APROVAL, REPAIR NOT STARTED, REPAIR IN PROGRESS, SERVICE READY
 The GUI shall have the capability to send an email with information about the diagnostic of device and cost of repair
-
--------------------------------------------------------------------------------
-REPORT:
--------------------------------------------------------------------------------
-The Software shall provide a reporting tool.
-
--------------------------------------------------------------------------------
-DATABASE:
--------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------
 MISC:
