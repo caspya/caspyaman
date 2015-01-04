@@ -16,6 +16,7 @@ The GUI shall have the capability to add a new hardware to the database
 The GUI shall have the capability to edit the information of an existing hardware in the database
 The GUI shall be able to create new service reports
 The GUI shall be able to edit/delete existing service reports in the database
+The GUI shall have the capability to send an email with information about the diagnostic of device and cost of repair
 
 -------------------------------------------------------------------------------
 SERVICE REPORT:
