@@ -20,7 +20,11 @@ The GUI shall have include the option to show the devices that are already repai
 -------------------------------------------------------------------------------
 HARDWARE:
 -------------------------------------------------------------------------------
-
+The software shall have the capability to add a new model of device
+The software shall have the capability to add a new brand of device
+The software shall have the capability to add a new type of device
+The software shall have the capability to add comments of the device
+The software shall have the capability to add a new serial number of the device
 -------------------------------------------------------------------------------
 CLIENT:
 -------------------------------------------------------------------------------
@@ -52,4 +56,5 @@ MISC:
 Other requirements
 -------------------------------------------------------------------------------
 The Software shall be packed into a couple of installer, one for windows and the other for linux systems
+The Software shall be packed into a couple of installer, one for the server and the other for the client
 The Software installer shall install all the dependen libraries an tools required for running
