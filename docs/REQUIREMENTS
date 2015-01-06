@@ -29,11 +29,36 @@ The software shall have the capability to add a new serial number of the device
 CLIENT:
 -------------------------------------------------------------------------------
 
+
+Register a costumer.
+The software shall have the capability to add a new costumer with the next field's:
+Name,Last Name,Company **,Address ,City ,Telephones(home, Office, personal), Email**
+Brand, Model and Type of device. Serial number, visible features. 
+Symptoms of device
+** These field will optional
+
+
 -------------------------------------------------------------------------------
-DATABASE AND REPORT:
+DATABASES AND REPORT:
+The Databases shall have a clients catalog
+The Databases shall have a brand of device catalog
+The databases shall have a model of device catalog
+The databases shall have a type of catalog
+The databases shall have a user catalog
+The databases shall have a historian of acces to users
+The databases shall have a repair type catalog
+The databases shall have a code bar catalog
+The databases shall have enter and exit of services
+
+
 -------------------------------------------------------------------------------
 The Software shall provide a reporting tool.
-
+The Software shall have a ticket for the costumer with the details of your service
+The Software shall have  a filter of service for user, person, device, brand, service type, in a time period
+The Software shall allow printing a code bar with the datails of service
+The service report shall have a details of the expert who did the service
+The service report shall have all details and comment's  of the service
+The Software have capability of print all details from each catalog.
 -------------------------------------------------------------------------------
 CORE:
 Core functional requirements
