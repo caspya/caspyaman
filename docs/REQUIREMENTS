@@ -18,6 +18,9 @@ The GUI shall have include the option to show the devices that have not been che
 The GUI shall have include the option to show the devices that  that are in review
 The GUI shall have include the option to show the devices that are already repaired
 The GUI shall allow the creation/edition/deletion of services (see services category for more details)
+The GUI shall be designed for touchscreen usage as much as possible (drag items, drop them, etc)
+There shall be a dashboard showing the current pending services (boxes for touchscreen handling, drag&drop for status update, selectable information to be displayed inside the box)
+
 -------------------------------------------------------------------------------
 HARDWARE:
 -------------------------------------------------------------------------------
@@ -26,18 +29,16 @@ The software shall have the capability to add a new brand of device
 The software shall have the capability to add a new type of device
 The software shall have the capability to add comments of the device
 The software shall have the capability to add a new serial number of the device
+
 -------------------------------------------------------------------------------
 CLIENT:
 -------------------------------------------------------------------------------
-
-
 Register a costumer.
 The software shall have the capability to add a new costumer with the next field's:
 Name,Last Name,Company **,Address ,City ,Telephones(home, Office, personal), Email**
 Brand, Model and Type of device. Serial number, visible features. 
 Symptoms of device
 ** These field will optional
-
 
 -------------------------------------------------------------------------------
 DATABASES:
@@ -73,6 +74,10 @@ Core functional requirements
 The Software shall make use of a database for storing client, hardware and service report information
 The Software shall provide Users Control and Levels.
 The Software shall have the capability to send email notifications to the client with information about the status of services
+The Software shall be able to create a list of materials to be purchased from the current services that requires them
+The Software shall be able to export reports in pdf and plain text formats
+The Software shall store the configuration settings in a file
+The Software shall be able to load a configuration settings file
 
 -------------------------------------------------------------------------------
 SERVICE:
@@ -97,6 +102,7 @@ A service shall have a ready date/time field
 A servece shall have a pick up date/time field
 A service shall have an estimated ready date/time field
 A service shall have a priority field
+A service shall have a cost field
 
 -------------------------------------------------------------------------------
 MISC:
