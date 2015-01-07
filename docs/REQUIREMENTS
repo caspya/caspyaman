@@ -17,6 +17,7 @@ The GUI shall have include the option to show who is checking each device
 The GUI shall have include the option to show the devices that have not been checked
 The GUI shall have include the option to show the devices that  that are in review
 The GUI shall have include the option to show the devices that are already repaired
+The GUI shall allow the creation/edition/deletion of services (see services category for more details)
 -------------------------------------------------------------------------------
 HARDWARE:
 -------------------------------------------------------------------------------
@@ -39,7 +40,8 @@ Symptoms of device
 
 
 -------------------------------------------------------------------------------
-DATABASES AND REPORT:
+DATABASES:
+-------------------------------------------------------------------------------
 The Databases shall have a clients catalog
 The Databases shall have a brand of device catalog
 The databases shall have a model of device catalog
@@ -49,8 +51,12 @@ The databases shall have a historian of acces to users
 The databases shall have a repair type catalog
 The databases shall have a code bar catalog
 The databases shall have enter and exit of services
+The database shall have a services catalog
+The database shall have a service type catalog (see service category for more details)
+The database shall keep a history log of activity with respect to changes to service fields (date, time, client, hardware, description, notes, status, priority)
 
-
+-------------------------------------------------------------------------------
+REPORT:
 -------------------------------------------------------------------------------
 The Software shall provide a reporting tool.
 The Software shall have a ticket for the costumer with the details of your service
@@ -59,27 +65,43 @@ The Software shall allow printing a code bar with the datails of service
 The service report shall have a details of the expert who did the service
 The service report shall have all details and comment's  of the service
 The Software have capability of print all details from each catalog.
+
 -------------------------------------------------------------------------------
 CORE:
 Core functional requirements
 -------------------------------------------------------------------------------
 The Software shall make use of a database for storing client, hardware and service report information
 The Software shall provide Users Control and Levels.
+The Software shall have the capability to send email notifications to the client with information about the status of services
 
 -------------------------------------------------------------------------------
 SERVICE:
 It is called "service" to any client request either for device diagnosis, repair or others.
 A service will be created upon the arrival of a device to the workshop
 -------------------------------------------------------------------------------
-A service report shall include client, hardware and service information
-A service shall include a status indicator for tracking the progress of it
-The service status shall keep track of the progress with stages like: SERVICE NOT STARTED, DIAGNOSIS IN PROGRESS, DIAGNOSIS COMPLETED AND WAITING FOR CLIENT APROVAL, REPAIR NOT STARTED, REPAIR IN PROGRESS, SERVICE READY
-The GUI shall have the capability to send an email with information about the diagnostic of device and cost of repair
+A service shall have an unique identifier
+A service shall have one or more client items associated to it
+A service shall allow the insertion/edition/deletion of clients associated to it
+A service shall have one or more hardware items associated to it
+A service shall allow the insertion/edition/deletion of hardware items associated to it
+A service shall have a major service type (HARDWARE, SOFTWARE, etc.)
+For every major service type, the service shall have a secondary service type (For HW: update memory, change screen, etc. For SW: install antivirus, install OS, etc.)
+A service shall have a description field
+A service shall have a notes field
+A service shall have a status field 
+The status field shall keep track of the progress of the service with stages like: SERVICE NOT STARTED, DIAGNOSIS IN PROGRESS, DIAGNOSIS COMPLETED AND WAITING FOR CLIENT APROVAL, REPAIR NOT STARTED, REPAIR IN PROGRESS, SERVICE READY
+A service shall have a cuantitative progress field for notification purposes
+A service shall allow the selection of the initial status
+A service shall have a creation date/time field
+A service shall have a ready date/time field 
+A servece shall have a pick up date/time field
+A service shall have an estimated ready date/time field
+A service shall have a priority field
 
 -------------------------------------------------------------------------------
 MISC:
 Other requirements
 -------------------------------------------------------------------------------
-The Software shall be packed into a couple of installer, one for windows and the other for linux systems
-The Software shall be packed into a couple of installer, one for the server and the other for the client
+The Software shall be packed into a couple of installers, one for windows and the other for linux systems
+There shall be an installer for the server application and other for the client
 The Software installer shall install all the dependen libraries an tools required for running
