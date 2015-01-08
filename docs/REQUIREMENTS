@@ -35,11 +35,13 @@ TECHNICIAN:
 CLIENT:
 -------------------------------------------------------------------------------
 The client shall include a name field
-The software shall have the capability to add a new costumer with the next field's:
-Name,Last Name,Company **,Address ,City ,Telephones(home, Office, personal), Email**
-Brand, Model and Type of device. Serial number, visible features. 
-Symptoms of device
-** These field will optional
+The client shall include a last name field
+The client shall include a company field
+The client shall include a address field
+The client shall include a city field
+The client shall include a telephone number field
+The client shall include a cellphone number field
+The client shall include a email address field
 
 -------------------------------------------------------------------------------
 DATABASES:
