@@ -3,37 +3,38 @@ USER INTERFACE:
 Stuff about the interface with the user
 -------------------------------------------------------------------------------
 The Software shall include a graphical user interface (GUI)
+The GUI shall have the capability to add a new client to the database 
+The GUI shall have the capability to edit the information of an existing client in the database 
 The GUI shall have the capability to add a new user to the database 
 The GUI shall have the capability to edit the information of an existing user in the database 
 The GUI shall have the capability to add a new hardware to the database 
 The GUI shall have the capability to edit the information of an existing hardware in the database
-The GUI shall be able to create new service reports
-The GUI shall be able to edit/delete existing service reports in the database
-The GUI shall have include the option to send an email with information about the diagnostic of device and cost of repair (service status) to the client
-The GUI shall have include the option to send a print of the service report
-The GUI shall have include the option to show the progress of each device
-The GUI shall have include the option to show the pending tasks
-The GUI shall have include the option to show who is checking each device
-The GUI shall have include the option to show the devices that have not been checked
-The GUI shall have include the option to show the devices that  that are in review
-The GUI shall have include the option to show the devices that are already repaired
 The GUI shall allow the creation/edition/deletion of services (see services category for more details)
+The GUI shall have include the service option to send an email with information about the diagnostic of device and cost of repair (service status) to the client
+The GUI shall have include the option to send a print of the service report
+The GUI shall have include the service option to show the progress of each service
+The GUI shall have include the dashboard option to show the pending tasks
+The GUI shall have include the dashboard option to show who is checking each device
+The GUI shall have include the dashboard option to show the devices status 
 The GUI shall be designed for touchscreen usage as much as possible (drag items, drop them, etc)
-There shall be a dashboard showing the current pending services (boxes for touchscreen handling, drag&drop for status update, selectable information to be displayed inside the box)
 
 -------------------------------------------------------------------------------
 HARDWARE:
 -------------------------------------------------------------------------------
-The software shall have the capability to add a new model of device
-The software shall have the capability to add a new brand of device
-The software shall have the capability to add a new type of device
-The software shall have the capability to add comments of the device
-The software shall have the capability to add a new serial number of the device
+The hardware shall have the model of device
+The hardware shall have the brand of device
+The hardware shall have the type of device
+The hardware shall have the physical description of the device
+The hardware shall have the serial number of the device
+
+-------------------------------------------------------------------------------
+TECHNICIAN:
+-------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------
 CLIENT:
 -------------------------------------------------------------------------------
-Register a costumer.
+The client shall include a name field
 The software shall have the capability to add a new costumer with the next field's:
 Name,Last Name,Company **,Address ,City ,Telephones(home, Office, personal), Email**
 Brand, Model and Type of device. Serial number, visible features. 
@@ -44,14 +45,9 @@ Symptoms of device
 DATABASES:
 -------------------------------------------------------------------------------
 The Databases shall have a clients catalog
-The Databases shall have a brand of device catalog
-The databases shall have a model of device catalog
-The databases shall have a type of catalog
+The Databases shall have a harware catalog
+The databases shall have a type of catalog /* Cesar to clarify this one
 The databases shall have a user catalog
-The databases shall have a historian of acces to users
-The databases shall have a repair type catalog
-The databases shall have a code bar catalog
-The databases shall have enter and exit of services
 The database shall have a services catalog
 The database shall have a service type catalog (see service category for more details)
 The database shall keep a history log of activity with respect to changes to service fields (date, time, client, hardware, description, notes, status, priority)
@@ -60,19 +56,16 @@ The database shall keep a history log of activity with respect to changes to ser
 REPORT:
 -------------------------------------------------------------------------------
 The Software shall provide a reporting tool.
-The Software shall have a ticket for the costumer with the details of your service
-The Software shall have  a filter of service for user, person, device, brand, service type, in a time period
-The Software shall allow printing a code bar with the datails of service
-The service report shall have a details of the expert who did the service
-The service report shall have all details and comment's  of the service
+The Software shall be able to generate a summary of the service (identifier, client name, service type, etc)  (to be taped in the hardware).
+The Software shall be able to generate a ticket for the costumer with the details of your service (at any stage of the service)
+The Software shall have a filter of service for user, person, device, brand, service type, etc.
 The Software have capability of print all details from each catalog.
 
 -------------------------------------------------------------------------------
 CORE:
 Core functional requirements
 -------------------------------------------------------------------------------
-The Software shall make use of a database for storing client, hardware and service report information
-The Software shall provide Users Control and Levels.
+The Software shall provide different access levels base on user privileges (Administrator, user).
 The Software shall have the capability to send email notifications to the client with information about the status of services
 The Software shall be able to create a list of materials to be purchased from the current services that requires them
 The Software shall be able to export reports in pdf and plain text formats
@@ -90,11 +83,12 @@ A service shall allow the insertion/edition/deletion of clients associated to it
 A service shall have one or more hardware items associated to it
 A service shall allow the insertion/edition/deletion of hardware items associated to it
 A service shall have a major service type (HARDWARE, SOFTWARE, etc.)
+A service shall have one technician item associated to it
+A service shall allow the edition/deletion of the technician working on the service
 For every major service type, the service shall have a secondary service type (For HW: update memory, change screen, etc. For SW: install antivirus, install OS, etc.)
-A service shall have a description field
 A service shall have a notes field
 A service shall have a status field 
-The status field shall keep track of the progress of the service with stages like: SERVICE NOT STARTED, DIAGNOSIS IN PROGRESS, DIAGNOSIS COMPLETED AND WAITING FOR CLIENT APROVAL, REPAIR NOT STARTED, REPAIR IN PROGRESS, SERVICE READY
+The status field shall keep track of the progress of the service with stages like: SERVICE NOT STARTED, DIAGNOSIS IN PROGRESS, DIAGNOSIS COMPLETED AND WAITING FOR CLIENT APROVAL, REPAIR ACCEPTED BY CLIENT, REPAIR NOT STARTED, REPAIR IN PROGRESS, SERVICE READY
 A service shall have a cuantitative progress field for notification purposes
 A service shall allow the selection of the initial status
 A service shall have a creation date/time field
@@ -108,6 +102,6 @@ A service shall have a cost field
 MISC:
 Other requirements
 -------------------------------------------------------------------------------
-The Software shall be packed into a couple of installers, one for windows and the other for linux systems
+The Software shall be packed into installers for windows, linux and android
 There shall be an installer for the server application and other for the client
 The Software installer shall install all the dependen libraries an tools required for running
