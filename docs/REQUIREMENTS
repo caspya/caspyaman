@@ -48,6 +48,8 @@ The client shall include a city field
 The client shall include a telephone number field
 The client shall include a cellphone number field
 The client shall include a email address field
+The client shall include a field with the details of service
+The client shall include a field with accesories includes
 
 -------------------------------------------------------------------------------
 DATABASES:
@@ -55,11 +57,12 @@ DATABASES:
 The Databases shall have a clients catalog
 The Databases shall have a harware catalog
 The Databases shall have a software catalog
-The databases shall have a type of catalog /* Cesar to clarify this one
+The databases shall have a type services catalog
 The databases shall have a user catalog
-The database shall have a services catalog
-The database shall have a service type catalog (see service category for more details)
-The database shall keep a history log of activity with respect to changes to service fields (date, time, client, hardware, description, notes, status, priority)
+The databases shall have a services catalog
+The databases shall have a service type catalog (see service category for more details)
+The databases shall keep a history log of activity with respect to changes to service fields (date, time, client, hardware, description, notes, status, priority)
+The databases shall hace a accesories field
 
 -------------------------------------------------------------------------------
 REPORT:
