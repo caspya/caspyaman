@@ -3,12 +3,10 @@ USER INTERFACE:
 Stuff about the interface with the user
 -------------------------------------------------------------------------------
 The Software shall include a graphical user interface (GUI)
-The GUI shall have the capability to add a new client to the database 
-The GUI shall have the capability to edit the information of an existing client in the database 
-The GUI shall have the capability to add a new user to the database 
-The GUI shall have the capability to edit the information of an existing user in the database 
-The GUI shall have the capability to add a new hardware to the database 
-The GUI shall have the capability to edit the information of an existing hardware in the database
+The GUI shall allow the creation/edition/deletion of clients
+The GUI shall allow the creation/edition/deletion of users 
+The GUI shall allow the creation/edition/deletion of hardware
+The GUI shall allow the creation/edition/deletion of software
 The GUI shall allow the creation/edition/deletion of services (see services category for more details)
 The GUI shall have include the service option to send an email with information about the diagnostic of device and cost of repair (service status) to the client
 The GUI shall have include the option to send a print of the service report
@@ -26,7 +24,15 @@ The hardware shall have the brand of device
 The hardware shall have the type of device
 The hardware shall have the physical description of the device
 The hardware shall have the serial number of the device
-
+-------------------------------------------------------------------------------
+SOFTWARE:
+-------------------------------------------------------------------------------
+The software shall have the name of program
+The software shall have the version of program
+The software shall have the lenguage of program
+The software shall have the type of program (Architecture, Design, etc.)
+The software shall have the architecture of program (32 or 64 bits)
+The software shall have in which OS runs the program (Windows, Mac OS, etc.)
 -------------------------------------------------------------------------------
 TECHNICIAN:
 -------------------------------------------------------------------------------
@@ -48,6 +54,7 @@ DATABASES:
 -------------------------------------------------------------------------------
 The Databases shall have a clients catalog
 The Databases shall have a harware catalog
+The Databases shall have a software catalog
 The databases shall have a type of catalog /* Cesar to clarify this one
 The databases shall have a user catalog
 The database shall have a services catalog
